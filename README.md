@@ -1,55 +1,64 @@
-# 📊 Predicción de la Demanda de Energía Eléctrica mediante modelos de Machine Learning
+# 📊 Electricity Demand Forecasting Using Machine Learning Models
 
-## 📌 Descripción  
-La demanda eléctrica es un pilar fundamental de la economía, con grandes desafíos debido a su difícil almacenamiento y variabilidad. Con el auge del **Big Data** y 
-la **inteligencia artificial**, se han desarrollado modelos avanzados para predecir el consumo y evitar pérdidas económicas. Este proyecto compara técnicas de **Machine Learning** 
-y modelos tradicionales para evaluar su eficacia en la predicción de la demanda eléctrica.
+## 📌 Description  
+Electricity demand is a fundamental pillar of the economy, presenting major challenges due to its difficult storage and high variability.  
+With the rise of **Big Data** and **Artificial Intelligence**, advanced models have been developed to predict consumption and prevent economic losses.  
+This project compares **Machine Learning** techniques and traditional models to evaluate their effectiveness in forecasting electricity demand.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas  
+## 🛠️ Technologies Used  
 
-### 📌 Lenguaje de Programación  
+### 📌 Programming Language  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-### 📌 Librerías Principales  
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/Scikit%20Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white) ![Skforecast](https://img.shields.io/badge/Skforecast-FF6F00?style=for-the-badge&logo=python&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![Pyesios](https://img.shields.io/badge/Pyesios-003B57?style=for-the-badge&logo=python&logoColor=white) 
+### 📌 Main Libraries  
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)  
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)  
+![Scikit-Learn](https://img.shields.io/badge/Scikit%20Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)  
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white)  
+![Skforecast](https://img.shields.io/badge/Skforecast-FF6F00?style=for-the-badge&logo=python&logoColor=white)  
+![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)  
+![Pyesios](https://img.shields.io/badge/Pyesios-003B57?style=for-the-badge&logo=python&logoColor=white)  
 
 ---
 
-## 📂 Estructura del Proyecto  
+## 📂 Project Structure  
 
-📁 **latex/** → Contiene los archivos de la memoria redactada en LaTeX.  
+📁 **latex/** → Contains the thesis report written in LaTeX.  
 
-📁 **preprocessing/** → Extracción, preprocesamiento y análisis exploratorio de los datos.  
-  - 📄 `extracción_temperatura_humedad.ipynb` → Obtención de datos meteorológicos.  
-  - 📄 `datos_climáticos_diarios.csv` → Datos meteorológicos procesados.  
-  - 📄 `extracción_demanda_eléctrica.ipynb` → Obtención de datos de demanda eléctrica.  
-  - 📄 `datos_demanda_media_diaria.csv` → Datos de consumo eléctrico.  
-  - 📄 `preprocesamiento.ipynb` → Limpieza y transformación de datos.  
-  - 📄 `datos_preprocesados.csv` → Datos finales listos para modelado.  
-  - 📄 `EDA.ipynb` → Análisis exploratorio de datos.  
+📁 **preprocessing/** → Data extraction, preprocessing, and exploratory analysis.  
+  - 📄 `extracción_temperatura_humedad.ipynb` → Retrieval of meteorological data.  
+  - 📄 `datos_climáticos_diarios.csv` → Processed weather data.  
+  - 📄 `extracción_demanda_eléctrica.ipynb` → Retrieval of electricity demand data.  
+  - 📄 `datos_demanda_media_diaria.csv` → Daily average electricity consumption data.  
+  - 📄 `preprocesamiento.ipynb` → Data cleaning and transformation.  
+  - 📄 `datos_preprocesados.csv` → Final dataset ready for modeling.  
+  - 📄 `EDA.ipynb` → Exploratory data analysis.  
 
-📁 **models/** → Implementación y evaluación de modelos de predicción.  
-  - 📄 `ARIMAX.ipynb` → Modelo ARIMAX optimizado.  
-  - 📄 `generic_model.ipynb` → Modelos **Decision Tree, Random Forest y XGBoost**.  
-  - 📄 `LSTM.ipynb` → Modelo de **Red Neuronal LSTM** para series temporales.  
-  - 📄 `results.xlsx` → Comparación de resultados entre modelos.  
+📁 **models/** → Implementation and evaluation of forecasting models.  
+  - 📄 `ARIMAX.ipynb` → Optimized ARIMAX model.  
+  - 📄 `generic_model.ipynb` → **Decision Tree, Random Forest, and XGBoost** models.  
+  - 📄 `LSTM.ipynb` → **LSTM Neural Network** for time series forecasting.  
+  - 📄 `results.xlsx` → Model performance comparison.  
 
-📁 **data/** → Copia de seguridad de los archivos con los datos.  
-
----
-
-## 🚀 Modelos Implementados  
-✔ **ARIMAX** → Modelo estadístico para series temporales.  
-✔ **Decision Tree, Random Forest, XGBoost** → Modelos de aprendizaje supervisado.  
-✔ **LSTM (Long Short-Term Memory)** → Red neuronal para modelado de series temporales.  
+📁 **data/** → Backup folder containing raw and processed data files.  
 
 ---
 
-## 📈 Resultados y Conclusiones  
-Este proyecto ha permitido analizar y comparar distintos modelos de Machine Learning para la predicción de la demanda eléctrica, destacando XGBoost como el más eficiente en términos de precisión y coste computacional. Aunque el modelo LSTM mostró potencial, su rendimiento se vio limitado por los tiempos de procesamiento y la granularidad de los datos. Las variables exógenas, como la temperatura y los días festivos, tuvieron un impacto clave en la predicción, mientras que otras, como la humedad, introdujeron cierto ruido. En general, la planificación y ejecución del proyecto han sido exitosas, aunque futuras mejoras podrían centrarse en un mayor nivel de detalle en los datos y la optimización avanzada de hiperparámetros. 
+## 🚀 Implemented Models  
+✔ **ARIMAX** → Traditional statistical model for time series forecasting.  
+✔ **Decision Tree, Random Forest, XGBoost** → Supervised machine learning algorithms.  
+✔ **LSTM (Long Short-Term Memory)** → Neural network for sequential and temporal data.  
+
+---
+
+## 📈 Results and Conclusions  
+This project analyzed and compared different **Machine Learning** models for electricity demand forecasting, highlighting **XGBoost** as the most efficient in terms of accuracy and computational cost.  
+Although the **LSTM** model showed strong potential, its performance was limited by processing times and data granularity.  
+Exogenous variables such as **temperature** and **holidays** played a key role in improving prediction accuracy, while others, like **humidity**, introduced some noise.  
+
+Overall, the project successfully achieved its objectives, demonstrating the advantages of machine learning for time series forecasting. Future improvements could focus on using higher-resolution data and advanced hyperparameter optimization to further enhance model performance.
 
 ---
 
