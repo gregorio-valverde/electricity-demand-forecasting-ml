@@ -102,34 +102,40 @@ The models are assessed using the same processed dataset, enabling a direct comp
 
 ## Project Structure
 
-```text
-## Project Structure
+The repository is organized into four main areas covering documentation, data preparation, modelling, and dataset storage.
 
-**`latex/`**  
-Contains the thesis report and its supporting LaTeX resources.
+### `latex/` — Academic Documentation
 
-**`preprocessing/`**  
-Contains the data extraction, preprocessing, and exploratory analysis workflow.
+Contains the complete thesis report and its supporting LaTeX resources.
 
-- `extracción_temperatura_humedad.ipynb` - Retrieves the meteorological data.
-- `datos_climáticos_diarios.csv` - Contains the processed daily weather data.
-- `extracción_demanda_eléctrica.ipynb` - Retrieves the electricity-demand data.
-- `datos_demanda_media_diaria.csv` - Contains the daily average electricity-demand data.
-- `preprocesamiento.ipynb` - Cleans, transforms, and combines the datasets.
-- `datos_preprocesados.csv` - Final dataset prepared for modelling.
-- `EDA.ipynb` - Performs the exploratory data analysis.
+### `preprocessing/` — Data Preparation
 
-**`models/`**  
-Contains the implementation, optimization, and evaluation of the forecasting models.
+Contains the notebooks and datasets used for data acquisition, transformation, and exploratory analysis.
 
-- `ARIMAX.ipynb` - Implements and optimizes the ARIMAX model.
-- `generic_model.ipynb` - Implements Decision Tree, Random Forest, and XGBoost.
-- `LSTM.ipynb` - Implements the LSTM neural network.
-- `results.xlsx` - Consolidates the model-performance results.
+| File | Purpose |
+|---|---|
+| `extracción_temperatura_humedad.ipynb` | Retrieves and processes temperature and humidity data. |
+| `datos_climáticos_diarios.csv` | Stores the processed daily meteorological data. |
+| `extracción_demanda_eléctrica.ipynb` | Retrieves historical electricity-demand data. |
+| `datos_demanda_media_diaria.csv` | Stores the calculated daily average electricity demand. |
+| `preprocesamiento.ipynb` | Cleans, transforms, and combines the available data sources. |
+| `datos_preprocesados.csv` | Final model-ready dataset generated during preprocessing. |
+| `EDA.ipynb` | Explores trends, seasonality, correlations, and anomalous values. |
 
-**`data/`**  
-Contains backup copies of the raw and processed datasets.
-```
+### `models/` — Forecasting Models
+
+Contains the implementation, optimization, and evaluation of the forecasting approaches.
+
+| File | Purpose |
+|---|---|
+| `ARIMAX.ipynb` | Implements and optimizes the statistical ARIMAX model. |
+| `generic_model.ipynb` | Trains and evaluates Decision Tree, Random Forest, and XGBoost models. |
+| `LSTM.ipynb` | Implements the LSTM neural network for sequential forecasting. |
+| `results.xlsx` | Consolidates the performance metrics obtained by each model. |
+
+### `data/` — Dataset Backup
+
+Preserves backup copies of the raw, intermediate, and processed datasets used throughout the project.
 
 ### Directory Responsibilities
 
