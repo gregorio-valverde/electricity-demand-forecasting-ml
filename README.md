@@ -103,24 +103,32 @@ The models are assessed using the same processed dataset, enabling a direct comp
 ## Project Structure
 
 ```text
-.
-â”œâ”€â”€ latex/
-â”‚   â””â”€â”€ ...                              # Thesis report and LaTeX resources
-â”œâ”€â”€ preprocessing/
-â”‚   â”œâ”€â”€ extracciÃ³n_temperatura_humedad.ipynb
-â”‚   â”œâ”€â”€ datos_climÃ¡ticos_diarios.csv
-â”‚   â”œâ”€â”€ extracciÃ³n_demanda_elÃ©ctrica.ipynb
-â”‚   â”œâ”€â”€ datos_demanda_media_diaria.csv
-â”‚   â”œâ”€â”€ preprocesamiento.ipynb
-â”‚   â”œâ”€â”€ datos_preprocesados.csv
-â”‚   â””â”€â”€ EDA.ipynb
-â”œâ”€â”€ models/
-â”‚   â”œâ”€â”€ ARIMAX.ipynb
-â”‚   â”œâ”€â”€ generic_model.ipynb
-â”‚   â”œâ”€â”€ LSTM.ipynb
-â”‚   â””â”€â”€ results.xlsx
-â””â”€â”€ data/
-    â””â”€â”€ ...                              # Backup of raw and processed datasets
+## Project Structure
+
+**`latex/`**  
+Contains the thesis report and its supporting LaTeX resources.
+
+**`preprocessing/`**  
+Contains the data extraction, preprocessing, and exploratory analysis workflow.
+
+- `extracción_temperatura_humedad.ipynb` - Retrieves the meteorological data.
+- `datos_climáticos_diarios.csv` - Contains the processed daily weather data.
+- `extracción_demanda_eléctrica.ipynb` - Retrieves the electricity-demand data.
+- `datos_demanda_media_diaria.csv` - Contains the daily average electricity-demand data.
+- `preprocesamiento.ipynb` - Cleans, transforms, and combines the datasets.
+- `datos_preprocesados.csv` - Final dataset prepared for modelling.
+- `EDA.ipynb` - Performs the exploratory data analysis.
+
+**`models/`**  
+Contains the implementation, optimization, and evaluation of the forecasting models.
+
+- `ARIMAX.ipynb` - Implements and optimizes the ARIMAX model.
+- `generic_model.ipynb` - Implements Decision Tree, Random Forest, and XGBoost.
+- `LSTM.ipynb` - Implements the LSTM neural network.
+- `results.xlsx` - Consolidates the model-performance results.
+
+**`data/`**  
+Contains backup copies of the raw and processed datasets.
 ```
 
 ### Directory Responsibilities
